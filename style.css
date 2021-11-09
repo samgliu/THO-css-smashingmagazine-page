@@ -19,6 +19,8 @@ header {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin: 0;
+    width: 100%;
 }
 .header {
     background: gray;
