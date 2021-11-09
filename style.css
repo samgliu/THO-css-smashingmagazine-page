@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.author-name {
+    color: gray;
+    font-weight: 900;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*  header */
+header {
+    font-family: 'Mija', -apple-system, BlinkMacSystemFont, 'Roboto',
+        'Roboto Slab', 'Droid Serif', 'Segoe UI', system-ui, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header {
+    background: gray;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#full-logo {
+    width: 300px;
+    height: 109px;
+    padding-top: 1.5em;
+}
+header ul li div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+    align-items: center;
+    justify-content: center;
+}
+header ul li input {
+    height: 3em;
+    border-radius: 8px;
+}
+header ul li input {
+    background-image: url('./images/search.svg');
+    background-repeat: no-repeat;
+    background-size: 1.8em 1.8em;
+    background-position: 0.1em 0.6em;
+}
+header ul li input::placeholder {
+    padding-left: 2em;
+}
+.navbar {
+    background: white;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    border-bottom: 1 solid rgb(223, 223, 223);
+    box-shadow: 6px 6px 6px rgb(223, 223, 223);
+}
+.navbar li {
+    overflow: hidden;
+    background: rgb(226, 226, 226);
+    border-radius: 0.25em;
+    padding: 0.2em;
+    height: 1.5em;
+    margin: 0.8em 0 0.8em 0;
+}
+/*  main  */
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-left: 5vw;
+}
+/*  articles   */
+.article-container {
+    font-family: Elena, -apple-system, BlinkMacSystemFont, Roboto, 'Roboto Slab',
+        'Droid Serif', 'Segoe UI', system-ui, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 55vw;
+}
+.headline-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.headline-header h1 {
+    font-size: 2em;
+}
+.headline p {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+.headline a {
+    color: gray;
+    font-weight: 700;
+}
+.bio-image-wrapper {
+    /*  bio-image-wrapper: source:www.smashingmagazine.com */
+    background: var(
+        --bio-image-background-color,
+        var(--bio-image-border-color, gray)
+    );
+    border: solid var(--bio-image-border-width, 8px)
+        var(--bio-image-border-color, gray);
+    border-radius: 2em;
+    transform: scale(0.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
+    transform-origin: 0 100%;
+    transition: transform 0.2s ease-out;
+    overflow: hidden;
+    width: 500px;
+    height: auto;
+}
+.bio-image-wrapper img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2) rotateZ(calc(11 * 1deg));
+    transition: transform 0.2s ease-out;
+}
+.bio-image-wrapper-small {
+    /*  bio-image-wrapper: source:www.smashingmagazine.com */
+    background: var(
+        --bio-image-background-color,
+        var(--bio-image-border-color, gray)
+    );
+    border: solid var(--bio-image-border-width, 8px)
+        var(--bio-image-border-color, gray);
+    border-radius: 2em;
+    transform: scale(0.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
+    transform-origin: 0 100%;
+    transition: transform 0.2s ease-out;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.bio-image-wrapper-small img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2) rotateZ(calc(11 * 1deg));
+    transition: transform 0.2s ease-out;
+}
+
+/*  sidebar  */
+.sidebar {
+    width: 25vw;
+    min-width: 360px;
+    background: #e7f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 50px 0 50px;
+    border-radius: 1em;
+    height: 90vh;
+}
+.sidebar-image-container {
+    position: relative;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+.sidebar-image-container img {
+    top: -125px;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.email-button {
+    background-color: white;
+    border-radius: 0.6em;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+    color: gray;
+    padding: 20px;
+    font-size: 2em;
+}
+.sidebar h1 {
+    margin: 30px;
+    text-align: center;
+}
+.sidebar p {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 30px;
+}
+.subscribe-container {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+.subscribe-container button {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 2em;
+    color: white;
+    background: gray;
+}
+.subscribe-container input {
+    font-size: 1.1em;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.sidebar .PS-words {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/*  ads  */
+.ads {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    max-width: 90vw;
+}
+.ad-container {
+    border: none;
+    box-shadow: 1px 1px 6px 1px gray;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ad-container h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+.ad-container p {
+    font-size: 1.3em;
+}
+.ad-container button {
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
+.ad1 {
+    background: rgb(186, 203, 240);
+}
+.ad1 h1 {
+    color: rgb(50, 103, 219);
+}
+.ad1 button {
+    background-color: rgb(50, 103, 219);
+}
+.ad2 {
+    background: rgb(204, 243, 216);
+}
+.ad2 h1 {
+    color: rgb(40, 189, 85);
+}
+.ad2 button {
+    background-color: rgb(40, 189, 85);
+}
+.ad3 {
+    background: rgb(248, 203, 226);
+}
+.ad3 h1 {
+    color: rgb(221, 67, 144);
+}
+.ad3 button {
+    background-color: rgb(221, 67, 144);
+}
+
+/*  footer  */
+footer {
+    background: gray;
+    margin: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+footer h2 {
+    margin: 20px;
+    text-align: center;
+    font-size: 0.7em;
+}
+footer ul {
+    width: 80vw;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+    list-style: dot;
+}
+footer ul li::before {
+    content: '•';
+    margin-left: 1em;
+}
